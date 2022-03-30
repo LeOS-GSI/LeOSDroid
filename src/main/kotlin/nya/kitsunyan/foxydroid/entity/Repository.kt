@@ -95,6 +95,10 @@ data class Repository(val id: Long, val address: String, val mirrors: List<Strin
     }
 
     val defaultRepositories = listOf(run {
+      defaultRepository("https://raw.githubusercontent.com/LeOS-GSI/repo/master/fdroid/repo", "LeOS", "The official LeOS Free Software repository. " +
+        "Everything in this repository is ungoogled /tracker free and always built from the source code.",
+        21, true, "AA397AA3D66DE4AF62EBEF240C8DF60D508F5DA3080F79A7EAB97A48DCE2CE7D", "")
+    }, run {
       defaultRepository("https://f-droid.org/repo", "F-Droid", "The official F-Droid Free Software repository. " +
         "Everything in this repository is always built from the source code.",
         21, true, "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB", "")
