@@ -117,6 +117,14 @@ data class Repository(val id: Long, val address: String, val mirrors: List<Strin
         "repository of The Guardian Project apps for use with the F-Droid client. This contains older versions of " +
         "applications from the main repository.", 21, false,
         "B7C2EEFD8DAC7806AF67DFCD92EB18126BC08312A7F2D6F3862E46013C7A6135", "")
+    }, run {
+      defaultRepository("https://cloudflare.f-droid.org/repo", "F-Droid fallback", "The official " +
+        "F_doid fallback for using with LeOS-Droid client.", 21, false,
+        "43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB", "")
+    }, run {
+      defaultRepository("https://fdroid.bromite.org/fdroid/repo", "Bromite", "The official " +
+        "Bromite repo for using with LeOS-Droid client.", 21, false,
+        "E1EE5CD076D7B0DC84CB2B45FB78B86DF2EB39A3B6C56BA3DC292A5E0C3B9504", "")
     })
   }
 }
