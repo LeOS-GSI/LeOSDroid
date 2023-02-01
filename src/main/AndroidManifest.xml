@@ -13,7 +13,7 @@
   <application
     android:name=".MainApplication"
     android:label="@string/application_name"
-    android:icon="@mipmap/ic_launcher"
+    android:icon="@mipmap/ic_launcher_foreground"
     android:supportsRtl="true"
     android:allowBackup="false"
     android:theme="@style/Theme.Main.Light"
